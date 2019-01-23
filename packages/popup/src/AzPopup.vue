@@ -1,8 +1,9 @@
 <template>
   <div>
+    <az-button id="btnaz">点击弹出</az-button>
     <!--有内容,可取消,可确定,可关闭,可拖拽的弹出层(居中显示)-->
     <!--询问层-->
-    <div class="az-dialogp drag" v-drag>
+    <div id="az-dia" class="az-dialogp drag" v-drag>
       <div class="az-titlep">信息</div>
       <span class="az-setwindp">
         <a href="javascript:;" class="az-closep"><img src="../../libs/images/az_close.png"></a>
@@ -49,6 +50,9 @@
     mounted(){
       // 有内容,可取消,可确定,可关闭,可拖拽的弹出层(居中显示)
       //取消
+      $("#btnaz").click(function () {
+        $("#az-dia").show('slow');
+      })
       $('.az-btnCancel').click(function(){
         $('.az-dialogp').hide('slow');
       })
@@ -64,7 +68,7 @@
           $('.az-determineafter').hide("slow");
         },2000)
       })
-    }
+    },
   }
 </script>
 

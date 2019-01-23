@@ -4,7 +4,6 @@ import popup from "./popup"
 // import search from "./search"
 // import skin from "./skin"
 import shopCart from "./shopCart"
-import toolTip from "./tooltip"
 import azinput from "./input"
 import azrow from "./row"
 import dropDownMenu from "./dropDownMenu"
@@ -37,8 +36,16 @@ import animationeighteen from './animationeighteen'
 import animationnineteen from './animationnineteen'
 import progressbarsecond from './progressbarsecond'
 import progressbarthird from './progressbarthird'
-
-
+import slideshow from "./slideshow"
+import slideshow2 from "./slideshow2"
+import slideshow3 from "./slideshow3"
+import paging from "./paging"
+import azthefrom from './theform'
+import azprombox from './promptbox'
+import azpromboxsend from './promptboxsecond'
+import aznavigativg from './navigation'
+import azbred from './breadcrumbs'
+import api from "./api"
 
 const AzoneUI = {};
 
@@ -49,7 +56,6 @@ AzoneUI.install = function (Vue,opts) {
   // Vue.component(search.name,search)
   // Vue.component(skin.name,skin)
   Vue.component(shopCart.name,shopCart),
-  Vue.component(toolTip.name,toolTip),
   Vue.component(azinput.name,azinput),
   Vue.component(azrow.name,azrow),
   Vue.component(dropDownMenu.name,dropDownMenu),
@@ -81,7 +87,18 @@ AzoneUI.install = function (Vue,opts) {
   Vue.component(animationnineteen.name,animationnineteen),
   Vue.component(progressbarsecond.name,progressbarsecond),
   Vue.component(progressbarthird.name,progressbarthird),
-  Vue.component(tablesecond.name,tablesecond)
+  Vue.component(tablesecond.name,tablesecond),
+  Vue.component(slideshow.name,slideshow),
+  Vue.component(slideshow2.name,slideshow2),
+  Vue.component(slideshow3.name,slideshow3),
+  Vue.component(paging.name,paging)
+  Vue.component(azthefrom.name,azthefrom)
+  Vue.component(azprombox.name,azprombox)
+  Vue.component(azpromboxsend.name,azpromboxsend)
+  Vue.component(aznavigativg.name,aznavigativg)
+  Vue.component(azbred.name,azbred)
+  Vue.component(api.name,api)
+
 
 };
 
